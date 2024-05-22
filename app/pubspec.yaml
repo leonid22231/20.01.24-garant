@@ -1,0 +1,63 @@
+name: app
+description: "Garant service"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.2.2
+  responsive_sizer: ^3.2.0
+  flutter_bloc: ^7.0.0
+  retrofit: ^4.0.3
+  json_annotation: ^4.8.1
+  country_code_picker: ^3.0.0
+  dio: ^5.4.0
+  pinput: ^3.0.1
+  flutter_svg: ^2.0.9
+  image_picker: ^1.0.7
+  flutter_xlider: ^3.5.0
+  intl: ^0.19.0
+  top_modal_sheet: ^2.0.1
+  card_swiper: ^3.0.1
+  flutter_localizations:
+    sdk: flutter
+  syncfusion_flutter_datepicker: ^24.1.46
+  flutter_downloader: ^1.11.6
+  path_provider: ^2.1.2
+  permission_handler: ^11.2.0
+  open_document: ^1.0.7
+  flutter_file_downloader: ^1.2.1
+  fluttertoast: ^8.2.4
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  retrofit_generator: '>=7.0.0 <8.0.0'
+  build_runner: '>=2.3.0 <4.0.0'
+  json_serializable: ^6.6.2
+  flutter_test:
+    sdk: flutter
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+
+  flutter_lints: ^2.0.0
+dependency_overrides:
+  intl: any
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
